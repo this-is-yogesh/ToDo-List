@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+
+body{
+  margin:0px;
+  padding :0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#root{
+  height : 100vh;
+  width : 100vw;
+  border: 2px solid blue;
+  display : flex;
+  flex-direction: column;
+}
+
+.add-tasks{
+  height : 10vh;
+  width : 100vw;
+  border : 2px solid maroon;
+}
+
+.tasks-list {
+  height : 100vh;
+  width : 100vw;
+  border : 2px solid blueviolet;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.tasks-list .todo {
+  height : 100%;
+  width : 50%;
+  border : 2px solid rgba(160, 14, 14, 0.767);
+}
+
+.tasks-list .finished {
+  height : 100%;
+  width : 50%;
+  border : 2px solid rgba(160, 14, 14, 0.767);
+}
+
+.add-tasks form{
+height : 100%;
+width : 30%;
+margin : 0px auto;
+padding : 10px;
+}
+
+.add-tasks form input {
+  margin : 0px 10px;
+padding :10px;
+border-radius : 50px;
+}
+
+.add-tasks form input[type=button]{
+cursor : pointer ;
+
+}
+.add-tasks form input[type=button]:hover{
+background-color: azure;
+}
+
+.tasks-list  ul li *{
+  margin : 10px;
+}
+
+.tasks-list .list-container {
+  height :70%;
+  width : 60%;
+background-color: aquamarine;
+  margin : 50px auto;
+  border-radius: 5px;
+}
+
+.tasks-list .list-container .title{
+  background-color: teal;
+  padding : 5px;
+  text-align: center;
+  font-size: 30px;
+  height: 10%;
+  border-radius: 5px;
+}
+
+.tasks-list .list-container .content{
+
+  height :90%;
+  width : 100%;
+  background-color: blanchedalmond;
+overflow-y: auto;
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tasks-list .list-container .content div {
+height : 50px;
+background-color: azure;
+border-bottom: 2px solid rgb(94, 6, 79);
+padding: 10px 10px;
+}
+
+
+.tasks-list .list-container .content div span {
+  margin : 0px 20px;
+}
+
+.tasks-list .list-container .content div span.material-icons {
+  cursor : pointer ;
+}
+
+.tasks-list .list-container .content div span.material-icons:hover{
+  color : plum;
+}
